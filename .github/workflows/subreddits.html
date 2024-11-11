@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Community Hierarchy Selection</title>
+</head>
+<body>
+    <h1>Reddit Community Hierarchy Selection</h1>
+    <ul>
+        <script>
+            const urls = Array.from({length: 300}, (_, i) => 
+                `https://www.reddit.com/best/communities/${i + 1}/`
+            );
+            urls.forEach(url => {
+                document.write(`<li><a href="${url}" target="_blank">${url}</a></li>`);
+            });
+        </script>
+    </ul>
+</body>
+</html>
